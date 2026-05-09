@@ -6,8 +6,8 @@ spec:
   selector:
     app: myapp
     version: blue
-  type: NodePort
+  type: LoadBalancer
   ports:
-  - port: 80
-    targetPort: 80
-    nodePort: 30080
+  - name: http
+    targetPort: 3001
+    port: 80    
