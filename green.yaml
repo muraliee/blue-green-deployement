@@ -19,6 +19,4 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
-        command: ["/bin/sh", "-c"]
-        args:
-          - echo "<html><body><h1>💚 MyApp - Green Version</h1></body></html>" > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'
+        
